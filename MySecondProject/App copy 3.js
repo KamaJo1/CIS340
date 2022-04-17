@@ -2,7 +2,7 @@ import React from 'expo-status-bar';
 import { Text,TextInput,View } from 'react-native';
 
 //
- function MyApp() {
+export default function MyApp() {
   //intializing variables 
   
   return (
@@ -13,26 +13,18 @@ import { Text,TextInput,View } from 'react-native';
      
     </Text>
     
-    
+    <TextInput 
+    style={{
+      height: 40,
+      borderColor: 'gray',
+      borderWidth: 1
+
+    }}
+    defaultValue= "Enter your Input!"/>
+
     </View>
   );
 
-}
-
-export default function MultiComp(){
-  return(
-    <View style= {{
-      flex: 1, 
-      justifyContent: 'center',
-      alignItems: 'center'
-    }}>
-      <Text>{"\n\n\n\n\n"} Welcome to CIS340</Text>
-      <MyApp/>
-      <MyApp/>
-      <MyApp/>
-      <MyApp/>
-    </View>
-  )
 }
 
 
