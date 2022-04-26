@@ -39,10 +39,9 @@ export default StatesApp = () => {
                     ]
                 }
                 //i can continue with more sections
-                renderItem={({item}) => <Text style = {{padding:10, fontSize: 20, height:44}}> {item}</Text>}
-                renderSectionHeader=
-                {({section}) => <Text style = {{paddingTop: 6, paddingLeft: 12, paddingRight: 12, paddingBottom: 6,
-                 fontSize: 12, fontWeight: 'bold', backgroundColor:'#9FA8DA',}} >
+                renderItem={({item})=> <Text style = {{padding:10, fontSize: 20, height:44}}> {item}</Text>}
+                renderSectionHeader= {({section}) => <Text style = {{paddingTop: 6, paddingLeft: 12, paddingRight: 12, paddingBottom: 6,
+                 fontSize: 12, fontWeight: 'bold', backgroundColor:'#9FA8DA',}} > {section.title}
         
          </Text>}
                 keyExtractor=
